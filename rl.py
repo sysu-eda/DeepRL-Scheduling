@@ -179,8 +179,9 @@ def visualization(results):
 if args.test != -1:
 	agent.policy.eval()
 	res = []
-	for i in range(10001,10021):
-		res.append(test(i))
+	# for i in range(10001,10021):
+	# 	res.append(test(i))
+	res.append(test(i))
 	for x in res:
 		print("%d %d %d %d %d %d" % (x[0],x[1],x[0]+x[1],x[2],x[3],x[2]+x[3]))
 	sys.exit()
